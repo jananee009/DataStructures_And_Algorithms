@@ -6,7 +6,7 @@ class Node:
 		
 
 	def setData(self, _data):
-		self.data = value
+		self.data = _data
 		return
 
 	def getData(self):
@@ -20,7 +20,7 @@ class Node:
 		return self.next
 
 
-class SinglyLinkedList:
+class SingleLinkedList:
 	def __init__(self):
 		self.count = 0
 		self.head = Node(None,None)
@@ -87,7 +87,7 @@ class SinglyLinkedList:
 
 
 def main():
-	myLinkedList = SinglyLinkedList()
+	myLinkedList = SingleLinkedList()
 	myLinkedList.insertNode(100)
 	myLinkedList.insertNode(200)
 	myLinkedList.insertNode(300)

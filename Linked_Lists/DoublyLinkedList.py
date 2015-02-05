@@ -29,7 +29,7 @@ class Node:
 		return self.prev
 
 
-class DoublyLinkedList:
+class DoubleLinkedList:
 	def __init__(self):
 		self.count = 0
 		self.head = Node(None,None,None)
@@ -100,7 +100,7 @@ class DoublyLinkedList:
 		return		
 
 def main():
-	myDoublyLinkedList = DoublyLinkedList()
+	myDoublyLinkedList = DoubleLinkedList()
 	myDoublyLinkedList.insertNode(100)
 	myDoublyLinkedList.insertNode(200)
 	myDoublyLinkedList.insertNode(300)
