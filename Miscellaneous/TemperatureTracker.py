@@ -1,6 +1,11 @@
 # Problem 7: Temperature Tracker
 # Source: https://www.interviewcake.com/question/python/temperature-tracker
-# You decide to test if your oddly-mathematical heating company is fulfilling its All-Time Max, Min, Mean and Mode Temperature Guarantee
+# Write a class TempTracker with these methods and Optimize for space and time:
+# insert()—records a new temperature
+# get_max()—returns the highest temp we've seen so far
+# get_min()—returns the lowest temp we've seen so far
+# get_mean()—returns the mean ↴ of all temps we've seen so far
+# get_mode()—returns the mode ↴ of all temps we've seen so far
 
 class TempTracker:
 	def __init__(self):
