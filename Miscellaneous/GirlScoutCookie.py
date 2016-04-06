@@ -15,11 +15,6 @@ def mergeBothLists(myList,yourList):
 	y = 0
 	
 	while(True):
-		print "newList: ",newList
-		print "myList[m]: ", myList[m]
-		print "yourList[y]: ",yourList[y]
-		print "m: ", m
-		print "y: ", y
 		if myList[m] < yourList[y]: 
 			newList.append(myList[m]) # as soon as we add an element to the newList, increment the counter of the list to which the element belonged.
 			m += 1
@@ -30,18 +25,20 @@ def mergeBothLists(myList,yourList):
 		if (m >= len(myList) and y >= len(yourList)): # both lists have been parsed.
 			break
 
-		elif ( (m >= len(myList) ) and y < len(yourList)):
+		elif ( (m >= len(myList) ) and y < len(yourList)): # first list is parsed and the second one has some unparsed elements.
 			newList.extend(yourList[y:])
 			break
 
-		elif ( (m < len(myList) ) and y >= len(yourList)	):
+		elif ( (m < len(myList) ) and y >= len(yourList)): # second list is parsed and the firt one has some unparsed elements.
 			newList.extend(myList[m:])	
 			break
 
 		else:
 			continue	
 	
-	print "Final Answer: ",newList			
+	print "List1: ",myList
+	print "List2: ",yourList
+	print "Merged Sorted List: ",newList			
 
 	return 		
 
