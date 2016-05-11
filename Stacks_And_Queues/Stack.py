@@ -6,10 +6,8 @@ class Stack:
 
 	def isEmpty(self):
 		if(len(self.stack)==0):
-			#print "Stack is empty."
 			return True
 		else:
-			#print "Stack is not empty."
 			return False
 
 	def push(self,element):
@@ -21,18 +19,14 @@ class Stack:
 			return
 		tmp = self.stack[len(self.stack)-1]
 		del self.stack[len(self.stack)-1]
-		#print "Popped element: ",tmp
 		return tmp
 
 	def peek(self):
 		if(len(self.stack)==0):
-			print "Empty!! Nothing to peek!!"
-			return		
-		#print "element that will be popped next is: ",	self.stack[len(self.stack)-1]	
+			return "Empty stack."		
 		return self.stack[len(self.stack)-1]	
 
 	def getSize(self):
-		#print "Size: ", len(self.stack)
 		return len(self.stack)
 
 	def printStack(self):
