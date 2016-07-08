@@ -22,7 +22,7 @@ def checkPalindrome(inputString):
 	letterCount = {}
 
 	# count number of times each alphabet is occurring in the inputstring.
-	for letter in inputString.lower(): # convert input string to lwoercase before processing.
+	for letter in inputString.lower(): # convert input string to lower case before processing.
 		if letter not in letterCount:
 			letterCount[letter] = 1
 		else:
